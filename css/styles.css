@@ -1,0 +1,266 @@
+/* Fonts */
+html {
+	font-family: 'Montserrat', sans-serif;
+	font-size: 14px;
+}
+body {
+	background-image: url("../img/bg.png");
+	background-color: #222;
+	background-repeat: repeat;
+}
+header, footer {
+	padding: 10px;
+}
+h1 {
+	font-family: 'Montserrat', sans-serif;
+	text-align: center;
+	padding-top: 10%;
+	font-size: 25px;
+}
+.subtitle {
+	font-family: 'Cookie', cursive;
+	text-align: center;
+	font-size: 20px;
+}
+h2 {
+	font-family: 'Cookie', cursive;
+	text-align: center;
+	font-size: 40px;
+}
+p a {
+	color: #fff;
+	text-decoration: none;
+	border-bottom: 1px solid #fff;
+}
+p a:hover {
+	color: #aacbff;
+	text-decoration: none;
+	border-bottom: 1px solid #aacbff;
+}
+
+/* Font sizing */
+@media(min-width: 576px) {
+  html {
+    font-size: 14px;
+  }
+  h1 {
+  	font-size: 35px;
+  }
+  .subtitle {
+  	font-size: 30px;
+  }
+  h2 {
+  	font-size: 45px;
+  }
+}
+@media(min-width: 768px) {
+  html {
+    font-size: 16px;
+  }
+  h1 {
+  	font-size: 45px;
+  }
+  .subtitle {
+  	font-size: 40px;
+  }
+  h2 {
+  	font-size: 50px;
+  }
+}
+@media(min-width: 992px) {
+  html {
+    font-size: 18px;
+  }
+  h1 {
+  	font-size: 55px;
+  }
+  .subtitle {
+  	font-size: 45px;
+  }
+  h2 {
+  	font-size: 60px;
+  }
+}
+@media(min-width: 1200px) {
+  html {
+    font-size: 20px;
+  }
+  h1 {
+  	font-size: 70px;
+  }
+  .subtitle {
+  	font-size: 50px;
+  }
+  h2 {
+  	font-size: 70px;
+  }
+}
+
+/* Borders */
+.bordered {
+	border-left: 1px;
+	border-right: 1px;
+	border-top: 0px;
+	border-bottom: 0px;
+	border-style: solid;
+	border-color: #e0e0e0;
+
+	-webkit-box-shadow: 0px 0px 10px 1px rgba(0,0,0,0.75);
+	-moz-box-shadow: 0px 0px 10px 1px rgba(0,0,0,0.75);
+	box-shadow: 0px 0px 10px 1px rgba(0,0,0,0.75);
+}
+
+/* Containers */
+.container {
+	width: 100%;
+}
+.textcontainer {
+	background-color: #222;
+}
+
+/* For small screens, make container full-screen */
+@media (max-width: 575px) {
+    .container {
+      padding: 0px;
+    }
+    header, footer {
+    	padding: 0px;
+    }
+    .bordered {
+    	border: 0px;
+    }
+}
+
+/* Carousel overlay */
+.overlay {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    width: 50%;
+    height: 42%;
+    z-index: 2;
+    background-clip: content-box;
+    background-color: #fff;
+    opacity: .7;
+    border: 1px solid #fff;
+    padding: 0.5%;
+}
+.halfline {
+	width: 70%;
+	height: 2px;
+	margin-top: 1%;
+	margin-bottom: 1%;
+}
+
+/* Carousel control buttons & indicators*/
+.carousel-indicators {
+	bottom: 1px;
+}
+.carousel-indicators li {
+	height: 5px;
+	width: 5px;
+	margin-left: 5px;
+	margin-right: 5px;
+	border-radius: 10px;
+}
+.carousel-control-prev, .carousel-control-next {
+	width: 10%;
+	z-index: 3;
+}
+
+/* Material icons font sizing */
+.material-icons.md-18 { font-size: 18px; }
+.material-icons.md-24 { font-size: 24px; }
+.material-icons.md-36 { font-size: 36px; }
+.material-icons.md-48 { font-size: 48px; }
+
+/* Menu */
+.menu {
+	background-color: #e0e0e0;
+	z-index: 10;
+	padding: 0px;
+	margin: 0px;	
+	overflow: auto;
+	position: relative;
+}
+.menulist {
+	margin: 0px;
+	padding: 0px;
+}
+.menulist li {
+	font-family: "Cookie", cursive;
+	font-size: 2em;
+	display: inline;
+	float: left;
+	padding-top: 1%;
+	padding-bottom: 1%;
+	padding-left: 2%;
+	padding-right: 2%;
+	color: #222;
+}
+.menulist li:hover {
+	background-color: #222;
+	color: #fff;
+	position: relative;
+}
+
+/* Content divs */
+.textcontainer > div {
+	padding: 4% 4% 2% 4%;
+}
+.textcontainer > :nth-child(2n+1) {
+	background-color: #222;
+	color: #fff;
+}
+.textcontainer > :nth-child(2n) {
+	background-color: #e0e0e0;
+	color: #222;
+}
+.col {
+	padding: 2%;
+}
+#footer {
+	text-align: center;
+	font-size: 10px;
+	padding: 10px;
+}
+#me .col-md {
+	text-align: center;
+}
+#me .row p {
+	text-align: justify;
+}
+#contact {
+	text-align: center;
+}
+
+/* Contact form submit button */
+.btn-custom {
+	background-color: #e0e0e0;
+	border-color: #e0e0e0;
+}
+.btn-custom:hover,
+.btn-custom:focus,
+.btn-custom:active,
+.btn-custom.active {
+	background-color: #fff;
+	border-color: #fff;
+}
+.btn-custom.disabled:hover,
+.btn-custom.disabled:focus,
+.btn-custom.disabled:active,
+.btn-custom.disabled.active,
+.btn-custom[disabled]:hover,
+.btn-custom[disabled]:focus,
+.btn-custom[disabled]:active,
+.btn-custom[disabled].active,
+fieldset[disabled] .btn-custom:hover,
+fieldset[disabled] .btn-custom:focus,
+fieldset[disabled] .btn-custom:active,
+fieldset[disabled] .btn-custom.active {
+	background-color: #e0e0e0;
+	border-color: #e0e0e0;
+}
