@@ -189,22 +189,24 @@ p a:hover {
 .menulist {
 	margin: 0px;
 	padding: 0px;
+	text-align: center;
 }
 .menulist li {
+	display: inline-block;
+}
+.menulist li a {
 	font-family: "Cookie", cursive;
 	font-size: 2em;
-	display: inline;
-	float: left;
-	padding-top: 1%;
-	padding-bottom: 1%;
-	padding-left: 2%;
-	padding-right: 2%;
 	color: #222;
+	line-height: 2em;
+	display: inline-block;
+	padding-left: 0.5em;
+	padding-right: 0.5em;
 }
-.menulist li:hover {
+.menulist li:hover, li a:hover {
 	background-color: #222;
 	color: #fff;
-	position: relative;
+	text-decoration: none;
 }
 
 /* Content divs */
